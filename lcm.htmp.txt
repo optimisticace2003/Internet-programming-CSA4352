@@ -1,0 +1,11 @@
+function findLCM(a, b) {
+  let max = Math.max(a, b);
+  let min = Math.min(a, b);
+  let lcm = max;
+
+  while (lcm % min !== 0) {
+    lcm += max;
+  }
+
+  return lcm;
+}
